@@ -3,7 +3,6 @@ package com.karan.rest.service.demojavarest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import javax.persistance.Entity;
 
 @Controller
 public class TestController {
@@ -18,6 +17,7 @@ public class TestController {
     @RequestMapping("/test1")
     @ResponseBody
     public HelloWorldBean test1() {
+        System.out.println("Boroo");
         return new HelloWorldBean("hello world");
         // return "This is Test1";
     }
